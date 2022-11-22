@@ -9,6 +9,7 @@
 ```
 https://github.com/fdefortunyDev/Pokedex-Nest.js.git
 ```
+
 2. Ejecutar
 ```
 yarn install
@@ -24,7 +25,15 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
-5. Reconstruir la base de datos con la semilla
+5. Clonar el archivo ```.env.template```, renombrar la copia a ```.env```
+y llenar las variables de entorno definidas en el ```.env``` 
+
+6. Levantar la aplicación
+```
+yarn start:dev
+```
+
+7. Reconstruir la base de datos con la semilla
 ```
 http://localhost:3000/api/v2/seed
 ```
